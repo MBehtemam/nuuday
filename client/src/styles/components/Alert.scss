@@ -1,0 +1,19 @@
+@import "../abstracts/all";
+.ys-alert {
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  &.ys-alert--warning {
+    border-color: $ys-color-warning-yellow;
+    background-color: $ys-color-warning-yellow-10;
+  }
+  &.ys-alert--info {
+    border-color: $ys-color-info-blue;
+    background-color: $ys-color-info-blue-10;
+  }
+  &.ys-alert--danger {
+    border-color: $ys-color-error-red;
+    background-color: $ys-color-error-red-10;
+  }
+}
