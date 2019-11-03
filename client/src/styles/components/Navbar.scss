@@ -1,0 +1,10 @@
+@import "../abstracts/collors";
+
+.ys-navbar {
+  display: flex;
+  align-items: center;
+  background-color: $ys-color-midnight-green;
+  height: 7rem;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 1rem;
+}

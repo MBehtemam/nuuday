@@ -1,0 +1,9 @@
+.ys-container {
+  display: flex;
+  &.ys-container--row {
+    flex-direction: row;
+  }
+  &.ys-container--column {
+    flex-direction: column;
+  }
+}
