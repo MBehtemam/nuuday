@@ -21,7 +21,7 @@ export default function Tr(props: any) {
     );
   } else {
     return (
-      <tr>
+      <tr onClick={() => props.onClick && props.onClick()}>
         {React.Children.map(props.children, (tdItem, index) =>
           React.cloneElement(tdItem, { headerIndex: index, key: index })
         )}

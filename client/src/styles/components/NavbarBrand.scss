@@ -4,4 +4,7 @@
   color: $ys-color-white;
   font-weight: 700;
   font-size: 3.5rem;
+  &:hover {
+    color: darken($ys-color-white, 5%);
+  }
 }

@@ -6,9 +6,11 @@ import { connect } from "react-redux";
 import Loading from "../components/Loading/Loading";
 import Alert from "../components/Alert/Alert";
 import UsersTable from "../components/UserTable";
+import "../styles/pages/UsersPage.scss";
 interface IProps {
   users: IUsersResponse;
   getUsers: Function;
+  history: any;
 }
 
 function UsersPage(props: IProps) {
@@ -20,7 +22,11 @@ function UsersPage(props: IProps) {
   } else if (props.users.didInvalidate) {
     return <Alert type="warning" message={props.users.err} />;
   } else {
-    return <UsersTable users={props.users.items} />;
+    return (
+      <div className="ys-users-page">
+        <UsersTable users={props.users.items} history={props.history} />
+      </div>
+    );
   }
 }
 const mapStateToProps = (state: IReducer) => ({

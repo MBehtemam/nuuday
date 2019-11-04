@@ -10,7 +10,6 @@ interface IProps {
   lng: number;
 }
 export default function UserMap(props: IProps) {
-  console.log(props);
   return (
     <Map
       // eslint-disable-next-line

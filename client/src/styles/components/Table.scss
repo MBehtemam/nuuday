@@ -3,19 +3,31 @@
   width: 100%;
   border-collapse: collapse;
   thead tr {
-    background: #002219;
-    color: #fff;
+    background: $ys-color-midnight-green;
+    color: $ys-color-white;
     font-weight: 600;
     th {
       padding: 0.5rem;
+      text-align: left;
     }
   }
   tbody {
     td {
-      padding: 0.2rem 0.2rem;
+      padding: 0.5rem 0.5rem;
+      color: $ys-color-white;
+      text-align: left;
+    }
+    tr:hover {
+      cursor: pointer;
+      td {
+        background-color: $ys-color-grey-22;
+      }
     }
     tr:nth-of-type(odd) {
-      background-color: gray;
+      background-color: $ys-color-digital-turquoise;
+    }
+    tr:nth-of-type(even) {
+      background-color: $ys-color-digital-sunset-yellow;
     }
     td .dlabel {
       display: none;
@@ -34,18 +46,19 @@
       position: absolute;
       top: -9999px;
       left: -9999px;
-      border-bottom: 2px solid #333;
+      border-bottom: 2px solid $ys-color-grey-28;
     }
     tbody tr {
-      border: 1px solid #000;
+      border: 1px solid transparent;
+      border-radius: 1rem;
       padding: 0.25rem;
       padding-left: 10rem;
+      margin-bottom: 1rem;
       td .dlabel {
         position: absolute;
         display: block;
 
-        /* Top/left values mimic padding */
-        left: 1rem;
+        left: 2rem;
         width: calc(50% - 2rem);
         white-space: pre-wrap;
         overflow-wrap: break-word;

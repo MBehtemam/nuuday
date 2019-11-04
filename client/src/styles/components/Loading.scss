@@ -1,0 +1,20 @@
+.ys-loading {
+  display: block;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 1s both infinite linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

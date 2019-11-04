@@ -1,9 +1,11 @@
 import React from "react";
 import IUser from "../../logic/Interface/IUser";
 import { Table, Tbody, Td, Th, Thead, Tr } from "../Table";
-import { Link } from "react-router-dom";
 interface IProps {
   users: IUser[];
+  history: {
+    push: Function;
+  };
 }
 
 export default function UserTable(props: IProps) {
@@ -19,10 +21,8 @@ export default function UserTable(props: IProps) {
       </Thead>
       <Tbody>
         {props.users.map((user: IUser) => (
-          <Tr key={user.id}>
-            <Td>
-              <Link to={`/${user.id}`}>{user.username}</Link>
-            </Td>
+          <Tr key={user.id} onClick={() => props.history.push(`/${user.id}`)}>
+            <Td>{user.username}</Td>
             <Td>{user.name}</Td>
             <Td>{user.email}</Td>
             <Td>{user.phone}</Td>

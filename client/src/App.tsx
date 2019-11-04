@@ -14,7 +14,7 @@ const App: React.FC = () => {
       <RootRouter>
         <Container direction="column">
           <Navbar>
-            <NavbarBrand text="youSee" />
+            <NavbarBrand text="youSee" path="/" />
           </Navbar>
           <Router />
         </Container>
