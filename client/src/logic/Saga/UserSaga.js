@@ -1,8 +1,8 @@
-import { takeLatest, put, call } from 'redux-saga/effects';
-import * as UserActions from '../Actions/UserAction';
-import * as UserAPI from '../API/UserAPI';
-import * as ActionTypes from '../Actions/ActionTypes';
-function* getUser({ userId }) {
+import { takeLatest, put, call } from "redux-saga/effects";
+import * as UserActions from "../Actions/UserAction";
+import * as UserAPI from "../API/UserAPI";
+import * as ActionTypes from "../Actions/ActionTypes";
+function* getUser({ payload: { userId } }) {
   try {
     yield put(UserActions.getUserRequest());
     const user = yield call(UserAPI.getUser, { userId });

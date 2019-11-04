@@ -1,0 +1,21 @@
+{
+  "name": "ysd-frontend-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "cd client && npm run start",
+    "backend": "cd server &&node backend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBehtemam/nuuday.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBehtemam/nuuday/issues"
+  },
+  "homepage": "https://github.com/MBehtemam/nuuday#readme"
+}

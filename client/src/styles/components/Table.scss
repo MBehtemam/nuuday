@@ -1,4 +1,4 @@
-$break_change: 40rem;
+@import "../abstracts/all";
 .ys-table {
   width: 100%;
   border-collapse: collapse;
@@ -21,7 +21,7 @@ $break_change: 40rem;
       display: none;
     }
   }
-  @media screen and (max-width: $break_change) {
+  @media screen and (max-width: $break-point-sl) {
     display: block;
     tr,
     tbody,

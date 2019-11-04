@@ -1,24 +1,24 @@
 interface IUser {
   id: number;
-  name: String;
-  username: String;
-  email: String;
+  name: string;
+  username: string;
+  email: string;
   address: {
-    street: String;
-    suite: String;
-    city: String;
-    zipcode: String;
+    street: string;
+    suite: string;
+    city: string;
+    zipcode: string;
     geo: {
-      lat: String;
-      lng: String;
+      lat: string;
+      lng: string;
     };
   };
-  phone: String;
-  website: String;
+  phone: string;
+  website: string;
   company: {
-    name: String;
-    catchPhrase: String;
-    bs: String;
+    name: string;
+    catchPhrase: string;
+    bs: string;
   };
 }
 export default IUser;
